@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thonduru Premsai — Data Analyst & ML Enthusiast</title>
+<meta name="description" content="Portfolio of Thonduru Premsai — Data Analyst & ML Enthusiast">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+<div id="preloader"><div class="pl-logo">PS</div><div class="pl-bar"><span></span></div></div>
+<div id="cursor-glow"></div>
+<canvas id="particle-canvas"></canvas>
+
+<!-- ============================= HEADER ============================= -->
+<header id="site-header">
+  <div class="container nav-wrap">
+    <a href="#home" class="brand"><span class="brand-mark">PS</span> Prem Sai</a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#home" class="active">Home<span class="dot"></span></a>
+      <a href="#about">About<span class="dot"></span></a>
+      <a href="#skills">Skills<span class="dot"></span></a>
+      <a href="#projects">Projects<span class="dot"></span></a>
+      <a href="#experience">Experience<span class="dot"></span></a>
+      <a href="#certifications">Certifications<span class="dot"></span></a>
+      <a href="#contact">Contact<span class="dot"></span></a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <a href="#" class="btn btn-primary btn-sm" id="download-cv"><i class="fa-solid fa-download"></i> Download CV</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobile-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <button class="mn-close" id="mn-close"><i class="fa-solid fa-xmark"></i></button>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="hello reveal in">Hello, I'm</p>
+      <h1 class="reveal in">Thonduru<br>Premsai<span class="typed-role"><span id="typed"></span><span class="caret"></span></span></h1>
+      <p class="desc reveal in">I transform data into meaningful insights and build intelligent solutions that drive impact. Passionate about Data Science, Analytics, and Cloud Technologies.</p>
+      <div class="hero-btns reveal in">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-dots"></i> View My Work</a>
+        <a href="https://github.com/prem4-sai" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/thonduru-premsai-a4a803305/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+      <div class="availability reveal in"><span class="pulse"></span> Available for opportunities <span class="sep"></span></div>
+    </div>
+
+    <div class="hero-visual reveal in">
+      <div class="side-dots"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="orbit-ring r1"></div>
+      <div class="orbit-ring r2"></div>
+      <div class="glow-orb"></div>
+
+      <div class="float-chip c1"><i class="fa-brands fa-python"></i></div>
+      <div class="float-chip c2"><i class="fa-solid fa-chart-column"></i></div>
+      <div class="float-chip c3"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+      <div class="float-chip c4"><i class="fa-solid fa-database"></i></div>
+      <div class="float-chip c5"><i class="fa-solid fa-cloud"></i></div>
+      <div class="float-chip c6 mono">SQL</div>
+
+      <div>
+        <div class="laptop">
+          <div class="laptop-screen">
+            <div class="code-line typing"></div>
+            <div class="code-line typing" style="animation-delay:.3s"></div>
+            <div class="code-line typing" style="animation-delay:.6s"></div>
+            <div class="code-line typing" style="animation-delay:.9s"></div>
+            <div class="code-line typing" style="animation-delay:1.2s"></div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+      </div>
+      <div class="scroll-down"><span>Scroll Down</span><div class="mouse-ico"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= STATS ============================= -->
+<div class="container stats-bar reveal">
+  <div class="stats-card">
+    <div class="stat-item"><div class="stat-ico"><i class="fa-solid fa-folder-open"></i></div><div class="stat-num" data-count="12">0</div><div class="stat-label">Projects Completed</div></div>
+    <div class="stat-item"><div class="stat-ico"><i class="fa-solid fa-award"></i></div><div class="stat-num" data-count="6">0</div><div class="stat-label">Certifications</div></div>
+    <div class="stat-item"><div class="stat-ico"><i class="fa-brands fa-github"></i></div><div class="stat-num" data-count="8">0</div><div class="stat-label">GitHub Repositories</div></div>
+    <div class="stat-item"><div class="stat-ico"><i class="fa-solid fa-briefcase"></i></div><div class="stat-num" data-count="3">0</div><div class="stat-label">Internships</div></div>
+    <div class="stat-item"><div class="stat-ico"><i class="fa-solid fa-code"></i></div><div class="stat-num" data-count="15">0</div><div class="stat-label">Technologies</div></div>
+  </div>
+</div>
+
+<!-- ============================= ABOUT ============================= -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <div class="avatar-frame"><i class="fa-solid fa-code"></i></div>
+    </div>
+    <div class="about-card reveal">
+      <span class="eyebrow">About Me</span>
+      <p>I am a Computer Science Engineer with a strong interest in Data Analytics, Machine Learning, and Cloud Technologies. I enjoy solving real-world problems through data-driven insights and building efficient, scalable applications.</p>
+      <ul class="about-meta">
+        <li><i class="fa-solid fa-graduation-cap"></i> B.E CSE, Akshaya College of Engineering & Technology</li>
+        <li><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu, India</li>
+        <li><i class="fa-solid fa-user-graduate"></i> Final Year Student (2027 Batch)</li>
+      </ul>
+      <a href="#" class="btn btn-outline" id="download-cv-2"><i class="fa-solid fa-download"></i> Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SKILLS ============================= -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="skills-card reveal">
+      <div class="skills-head">
+        <h3>My Skills</h3>
+        <a href="#projects" class="link-arrow">View All Skills <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(55,118,171,.18); color:#3776ab;"><i class="fa-brands fa-python"></i></span>Python</div><span class="skill-pct">90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(139,92,246,.18); color:#8b5cf6;"><i class="fa-solid fa-brain"></i></span>Machine Learning</div><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(59,130,246,.18); color:#3b82f6;"><i class="fa-solid fa-chart-simple"></i></span>Data Analysis</div><span class="skill-pct">90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(34,211,238,.18); color:#22d3ee;">SQL</span>SQL</div><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(34,197,94,.18); color:#22c55e;"><i class="fa-solid fa-table-cells"></i></span>Excel</div><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(240,219,79,.18); color:#f0db4f;"><i class="fa-brands fa-js"></i></span>JavaScript</div><span class="skill-pct">70%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(240,240,240,.14); color:#e5e7eb;"><i class="fa-brands fa-git-alt"></i></span>Git & GitHub</div><span class="skill-pct">90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(240,185,11,.18); color:#f0b90b;"><i class="fa-solid fa-chart-pie"></i></span>Power BI</div><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(232,76,60,.18); color:#e84c3c;"><i class="fa-solid fa-chart-line"></i></span>Tableau</div><span class="skill-pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(227,76,38,.18); color:#e34c26;"><i class="fa-brands fa-html5"></i></span>HTML</div><span class="skill-pct">90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(38,77,228,.18); color:#264de4;"><i class="fa-brands fa-css3-alt"></i></span>CSS</div><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(240,240,240,.14); color:#e5e7eb;"><i class="fa-solid fa-flask"></i></span>Flask</div><span class="skill-pct">75%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(249,115,22,.18); color:#f97316;"><i class="fa-solid fa-cloud"></i></span>Oracle Cloud</div><span class="skill-pct">75%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><div class="skill-name"><span class="skill-ico" style="background:rgba(249,115,22,.18); color:#f97316;"><i class="fa-solid fa-microchip"></i></span>TensorFlow</div><span class="skill-pct">80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROJECTS ============================= -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="projects-head reveal">
+      <div class="htitle"><span class="eyebrow">Featured Projects</span><h2>Things I've Built</h2></div>
+      <div style="display:flex; align-items:center; gap:22px;">
+        <a href="https://github.com/prem4-sai" target="_blank" rel="noopener" class="link-arrow">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="proj-nav"><button id="proj-prev"><i class="fa-solid fa-chevron-left"></i></button><button id="proj-next"><i class="fa-solid fa-chevron-right"></i></button></div>
+      </div>
+    </div>
+
+    <div class="projects-track reveal" id="projects-track">
+
+      <div class="proj-card">
+        <div class="proj-media" style="background:linear-gradient(150deg,#0f2027,#0a1a10);">
+          <div class="tag" style="color:#22c55e;"><i class="fa-solid fa-chart-line"></i> ML</div>
+          <div class="icon-badge"><i class="fa-solid fa-arrow-trend-up" style="color:#22c55e;"></i></div>
+          <i class="fa-solid fa-chart-line" style="color:#22c55e; opacity:.5;"></i>
+        </div>
+        <div class="proj-body">
+          <h4>Stock Price Prediction</h4>
+          <p>Predicting stock prices using LSTM and Prophet models trained on historical market data.</p>
+          <div class="proj-links"><a href="https://github.com/prem4-sai" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a href="#" class="demo">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-media" style="background:linear-gradient(150deg,#0a1a2e,#081120);">
+          <div class="tag" style="color:#22d3ee;"><i class="fa-solid fa-shield-halved"></i> Cybersecurity</div>
+          <div class="icon-badge"><i class="fa-solid fa-shield-halved" style="color:#22d3ee;"></i></div>
+          <i class="fa-solid fa-shield-halved" style="color:#22d3ee; opacity:.5;"></i>
+        </div>
+        <div class="proj-body">
+          <h4>Cybersecurity Monitoring</h4>
+          <p>Centralized platform for monitoring and protecting sensitive data across endpoints in real time.</p>
+          <div class="proj-links"><a href="https://github.com/prem4-sai" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a href="#" class="demo">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-media" style="background:linear-gradient(150deg,#111827,#1e1b3a);">
+          <div class="tag" style="color:#8b5cf6;"><i class="fa-solid fa-globe"></i> Web App</div>
+          <div class="icon-badge"><i class="fa-solid fa-lock" style="color:#8b5cf6;"></i></div>
+          <span class="mono" style="font-size:26px; font-weight:700; color:#22c55e;">92%</span>
+        </div>
+        <div class="proj-body">
+          <h4>Password Strength Analyzer</h4>
+          <p>Web app to evaluate the strength of passwords in real-time using entropy-based scoring.</p>
+          <div class="proj-links"><a href="https://github.com/prem4-sai" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a href="#" class="demo">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-media" style="background:linear-gradient(150deg,#0c1b2e,#132437);">
+          <div class="tag" style="color:#3b82f6;"><i class="fa-solid fa-ship"></i> Data Analysis</div>
+          <div class="icon-badge"><i class="fa-solid fa-ship" style="color:#3b82f6;"></i></div>
+          <i class="fa-solid fa-ship" style="color:#3b82f6; opacity:.5;"></i>
+        </div>
+        <div class="proj-body">
+          <h4>Titanic Data Analysis</h4>
+          <p>Exploratory data analysis on the Titanic dataset using Python, Pandas, and Seaborn.</p>
+          <div class="proj-links"><a href="https://github.com/prem4-sai" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a href="#" class="demo">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-media" style="background:linear-gradient(150deg,#241708,#1a1108);">
+          <div class="tag" style="color:#f97316;"><i class="fa-solid fa-chart-pie"></i> Dashboard</div>
+          <div class="icon-badge"><i class="fa-solid fa-chart-pie" style="color:#f97316;"></i></div>
+          <i class="fa-solid fa-chart-pie" style="color:#f97316; opacity:.5;"></i>
+        </div>
+        <div class="proj-body">
+          <h4>E-commerce Dashboard</h4>
+          <p>Interactive dashboard for sales analysis and customer insights across product categories.</p>
+          <div class="proj-links"><a href="https://github.com/prem4-sai" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a href="#" class="demo">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-media" style="background:linear-gradient(150deg,#1a1030,#0d0b1e);">
+          <div class="tag" style="color:#ec4899;"><i class="fa-solid fa-diagram-project"></i> Analytics</div>
+          <div class="icon-badge"><i class="fa-solid fa-diagram-project" style="color:#ec4899;"></i></div>
+          <i class="fa-solid fa-diagram-project" style="color:#ec4899; opacity:.5;"></i>
+        </div>
+        <div class="proj-body">
+          <h4>ApexPlanet Projects</h4>
+          <p>End-to-end data analytics tasks completed as part of the ApexPlanet internship program.</p>
+          <div class="proj-links"><a href="https://github.com/prem4-sai" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a href="#" class="demo">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= EXPERIENCE ============================= -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="projects-head reveal">
+      <div class="htitle"><span class="eyebrow">Experience & Achievements</span><h2>My Journey So Far</h2></div>
+      <a href="#certifications" class="link-arrow">View Full Timeline <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="timeline-wrap reveal" id="timeline">
+      <div class="timeline-line" id="timeline-line"></div>
+      <div class="timeline-row">
+        <div class="tl-item"><div class="tl-node"><i class="fa-solid fa-briefcase"></i></div><div class="tl-date">JUN – AUG 2024</div><h4>Data Analytics Intern</h4><div class="org">ApexPlanet Software Pvt Ltd</div><div class="desc">Worked on data cleaning, EDA, dashboards & insights.</div></div>
+        <div class="tl-item"><div class="tl-node"><i class="fa-solid fa-microchip"></i></div><div class="tl-date">MAY – JUL 2024</div><h4>AI & ML Intern</h4><div class="org">Soft Nexis Technology</div><div class="desc">Built ML models and worked on real-world datasets.</div></div>
+        <div class="tl-item"><div class="tl-node"><i class="fa-solid fa-code"></i></div><div class="tl-date">APR 2024</div><h4>Python Programming</h4><div class="org">NPTEL Certification</div><div class="desc">Completed 4-week course with Elite certification.</div></div>
+        <div class="tl-item"><div class="tl-node"><i class="fa-solid fa-trophy"></i></div><div class="tl-date">MAR 2024</div><h4>Hackathon Participant</h4><div class="org">Smart India Hackathon</div><div class="desc">Participated in SIH and built problem-solving solution.</div></div>
+        <div class="tl-item"><div class="tl-node"><i class="fa-solid fa-graduation-cap"></i></div><div class="tl-date">ONGOING</div><h4>Final Year Project</h4><div class="org">NexusAI Platform</div><div class="desc">Building an intelligent assistant platform using AI.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= TESTIMONIAL / CONTACT / CONNECT ============================= -->
+<section class="section" id="certifications">
+  <div class="container tri-grid">
+
+    <div class="panel reveal" id="testimonial-panel">
+      <h3>Testimonial</h3>
+      <div class="quote-mark">"</div>
+      <p class="testi-text" id="testi-text">Prem is a quick learner and possesses excellent analytical skills. He was proactive in every task and delivered high-quality work during the internship.</p>
+      <div class="testi-person">
+        <div class="testi-avatar" id="testi-avatar">A</div>
+        <div>
+          <div class="testi-name" id="testi-name">Aravind K</div>
+          <div class="testi-role" id="testi-role">Team Lead, ApexPlanet Software</div>
+          <div class="testi-stars" id="testi-stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testi-dots"></div>
+    </div>
+
+    <div class="panel reveal" id="contact">
+      <h3>Get In Touch</h3>
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="field"><label>Your Name</label><input type="text" name="name" placeholder="John Doe" required></div>
+          <div class="field"><label>Your Email</label><input type="email" name="email" placeholder="john@email.com" required></div>
+        </div>
+        <div class="field"><label>Your Subject</label><input type="text" name="subject" placeholder="Let's collaborate" required></div>
+        <div class="field"><label>Your Message</label><textarea name="message" placeholder="Tell me about your project..." required></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        <div class="form-msg" id="form-msg"></div>
+      </form>
+    </div>
+
+    <div class="panel reveal">
+      <h3>Connect With Me</h3>
+      <div class="connect-list">
+        <a class="connect-item" href="mailto:premsaithonduru54@gmail.com"><div class="connect-ico"><i class="fa-solid fa-envelope"></i></div><div><div class="connect-label">Email</div><div class="connect-value">premsaithonduru54@gmail.com</div></div></a>
+        <a class="connect-item" href="tel:+918019431799"><div class="connect-ico"><i class="fa-solid fa-phone"></i></div><div><div class="connect-label">Phone</div><div class="connect-value">+91 80194 31799</div></div></a>
+        <div class="connect-item"><div class="connect-ico"><i class="fa-solid fa-location-dot"></i></div><div><div class="connect-label">Location</div><div class="connect-value">Coimbatore, Tamil Nadu, India</div></div></div>
+        <a class="connect-item" href="https://www.linkedin.com/in/thonduru-premsai-a4a803305/" target="_blank" rel="noopener"><div class="connect-ico"><i class="fa-brands fa-linkedin"></i></div><div><div class="connect-label">LinkedIn</div><div class="connect-value">linkedin.com/in/thonduru-premsai-a4a803305</div></div></a>
+        <a class="connect-item" href="https://github.com/prem4-sai" target="_blank" rel="noopener"><div class="connect-ico"><i class="fa-brands fa-github"></i></div><div><div class="connect-label">GitHub</div><div class="connect-value">github.com/prem4-sai</div></div></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span class="brand-mark">PS</span> Prem Sai</a>
+        <p>Building intelligent solutions to solve real-world problems with data, analytics and AI.</p>
+      </div>
+      <div class="footer-col"><h5>Quick Links</h5><a href="#home">Home</a><a href="#about">About</a></div>
+      <div class="footer-col"><h5>Resources</h5><a href="#experience">Resume</a><a href="#certifications">Certifications</a><a href="#" id="privacy-link">Privacy Policy</a></div>
+      <div class="footer-col">
+        <h5>Let's Connect</h5>
+        <div class="footer-social">
+          <a href="https://github.com/prem4-sai" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/thonduru-premsai-a4a803305/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:premsaithonduru54@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Prem Sai. All rights reserved.</p>
+      <p class="made">Designed with <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

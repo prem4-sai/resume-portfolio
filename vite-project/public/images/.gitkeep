@@ -1,0 +1,3 @@
+Place static assets here (favicon, resume.pdf, project screenshots, etc.).
+Anything in /public is copied as-is to the build output and is reachable
+at the site root, e.g. public/resume.pdf -> /resume.pdf
